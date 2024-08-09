@@ -66,13 +66,16 @@ main {
   justify-content: end;
   gap: 1.5vw;
 }
+#menu {
+  display: none;
+}
 #nav3 h2 {
   font-size: 1.05vw;
   font-weight: 450;
 }
 .cta {
   padding: 0.7vw 1.5vw;
-  background-color: #E1D1FF;
+  background-color: #e1d1ff;
   border-radius: 50px;
 }
 #page12 {
@@ -82,148 +85,388 @@ main {
   padding: 0 5vw;
   padding-bottom: 3vw;
 }
-.maincontent1{
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
+.maincontent1 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
 }
-.maincontent1 h1{
-    font-size: 4vw;
-    line-height: 1;
-    font-weight: 400;
+.maincontent1 h1 {
+  font-size: 4.5vw;
+  line-height: 1;
+  font-weight: 400;
 }
-.maincontent2{
-    height: 100%;
-    width: 60%;
-    display: flex;
-    align-items: end;
+.maincontent2 {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: end;
 }
-.mctext{
-    width: 100%;
-    display: flex;
-    gap: 5vw;
-    align-items: end;
-    justify-content: end ;
+.mctext {
+  width: 100%;
+  display: flex;
+  gap: 5vw;
+  align-items: end;
+  justify-content: end;
 }
-.mc1 h1{
-   font-size: 1.7vw; 
-   font-weight: 400;
+.mc1 h1 {
+  font-size: 1.7vw;
+  font-weight: 400;
 }
-.mc2 h1{
-    font-size: 1.25vw;
-    font-weight: 400;
-    line-height: 1.1;
+.mc2 h1 {
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 1.1;
 }
-.getwork{
-    display: flex;
-    align-items: center;
-    padding: 0.7vw 1.5vw;
-    background-color: black;
-    color: white;
-    border-radius: 50px;
-    gap:1vw
+.getwork {
+  display: flex;
+  align-items: center;
+  padding: 0.7vw 1.5vw;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  gap: 1vw;
 }
-.getwork h2{
-    font-size: 1vw;
-    font-weight: 400;
+.getwork h2 {
+  font-size: 1vw;
+  font-weight: 400;
 }
-.getwork i{
-    font-size: 0.8vw;
-    font-weight: 400;
+.getwork i {
+  font-size: 0.8vw;
+  font-weight: 400;
 }
 #page13 {
   height: 42%;
   width: 100%;
 }
-#homeimg{
+#homeimg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 35px;
+  background-color: yellowgreen;
+}
+#homeimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page2 {
+  height: 80vh;
+  width: 100%;
+  padding: 0 5vw;
+}
+#page21 {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#page21 img {
+  width: 13.5%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+#page22 {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#page22 h2 {
+  display: none;
+  font-size: 6.71vw;
+  font-weight: 400;
+  line-height: 1.1;
+}
+#page22 h1 {
+  font-size: 4.6vw;
+  font-weight: 400;
+  line-height: 1.1;
+}
+#page23 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+}
+.part231 {
+  display: flex;
+}
+.circle {
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.circle img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.part232 {
+  display: flex;
+  align-items: center;
+  gap: 12vw;
+}
+.slash {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+#part2321 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+}
+#uppertext h1 {
+  font-size: 1.4vw;
+  line-height: 1.1;
+  font-weight: 400;
+}
+#lowertext h1 {
+  font-size: 1.2vw;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 6.5vw;
+  }
+  #page1 {
+    height: 65vh;
+    width: 100%;
+  }
+  /* navbar */
+  #page11 {
+    height: 10%;
+    width: 100%;
+    padding: 0 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav1 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+  #logo {
+    display: flex;
+    gap: 0.02vw;
+    transform: rotate(45deg);
+    margin-left: 2vw;
+  }
+  .secondlogo {
+    transform: translateY(-30%);
+  }
+  .logodiv {
+    height: 5vw;
+    width: 2.5vw;
+    border-radius: 20px;
+    background-color: black;
+  }
+  #nav2 {
+    display: none;
+  }
+  #nav2 h2 {
+    font-size: 1.1vw;
+    font-weight: 450;
+  }
+  #nav3 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5vw;
+  }
+  #nav3 h2 {
+    display: none;
+    font-size: 1.05vw;
+    font-weight: 450;
+  }
+  #menu {
+    display: block;
+    font-size: 6vw;
+    font-weight: 100;
+  }
+  .cta {
+    display: none;
+    padding: 0.7vw 1.5vw;
+    background-color: #e1d1ff;
+    border-radius: 50px;
+  }
+  #page12 {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;
+    padding-bottom: 3vw;
+  }
+  .maincontent1 {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .maincontent1 h1 {
+    font-size: 16vw;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .maincontent2 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .mctext {
+    width: 100%;
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    justify-content: start;
+  }
+  .mc1 {
+    display: none;
+  }
+  .mc1 h1 {
+    font-size: 1.7vw;
+    font-weight: 400;
+  }
+  .mc2 h1 {
+    font-size: 4.8vw;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  .getwork {
+    display: flex;
+    align-items: center;
+    padding: 2.5vw 6.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    gap: 2.2vw;
+  }
+  .getwork h2 {
+    font-size: 3.4vw;
+    font-weight: 400;
+  }
+  .getwork i {
+    font-size: 2.8vw;
+    font-weight: 400;
+  }
+  #page13 {
+    height: 35%;
+    width: 100%;
+  }
+  #homeimg {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    border-radius: 55px;
+    border-radius: 20px;
     background-color: yellowgreen;
-}
-#homeimg img{
+  }
+  #homeimg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+  }
 
-#page2{
-    height: 80vh;
+  #page2 {
+    height: 40vh;
     width: 100%;
     padding: 0 5vw;
-}
-#page21{
+  }
+  #page21 {
     height: 25%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-#page21 img{
-    width: 15%;
+  }
+  #page21 img {
+    width: 16.5%;
     aspect-ratio: 3/2;
     object-fit: contain;
     mix-blend-mode: color-burn;
-}
-#page22{
-    height: 45%;
+  }
+  #page22 {
+    height: 25%;
     width: 100%;
     display: flex;
     align-items: center;
-}
-#page22 h1{
-    font-size: 4.6vw;
+  }
+  #page22 h1 {
+    display: none;
+    font-size: 4.8vw;
     font-weight: 400;
     line-height: 1.1;
-}
-#page23{
-    height: 30%;
+  }
+  #page22 h2 {
+    display: block;
+    font-size: 6.71vw;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  #page23 {
+    height: 50%;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
     gap: 6vw;
-}
-.part231{
+  }
+  .part231 {
     display: flex;
-}
-.circle{
-    height: 5vw;
-    width: 5vw;
+  }
+  .circle {
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     overflow: hidden;
-}
-.circle img{
+  }
+  .circle img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.part232{
+  }
+  .part232 {
     display: flex;
     align-items: center;
     gap: 12vw;
-}
-.slash{
+  }
+  .slash {
+    display: none;
     font-size: 1.5vw;
     font-weight: 300;
-}
-#part2321{
+  }
+  #part2321 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1vw;
-}
-#uppertext h1{
-    font-size: 1.4vw;
+    gap: 3vw;
+  }
+  #uppertext h1 {
+    font-size: 3.8vw;
     line-height: 1.1;
     font-weight: 400;
-
-}
-#lowertext h1{
-    font-size: 1.2vw;
+  }
+  #lowertext h1 {
+    font-size: 4.2vw;
     line-height: 1.1;
     font-weight: 600;
-
+  }
 }
